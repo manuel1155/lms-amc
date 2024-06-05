@@ -1,0 +1,52 @@
+<c-accordion [alwaysOpen]="true">
+    <c-accordion-item #item0="cAccordionItem" [visible]="false">
+      <ng-template cTemplateId="accordionHeaderTemplate">
+        <button (click)="item0.toggleItem()" [collapsed]="!item0.visible" cAccordionButton>
+            DOLOR Y SUFRIMIENTO
+        </button>
+      </ng-template>
+      <ng-template cTemplateId="accordionBodyTemplate">
+        <div class="accordion-body">
+            Vivimos en sociedades de tantas distracciones y de la búsqueda del éxito y del goce que se niegan a reconocer <strong>el dolor o el sufrimiento emocional.</strong> 
+            Más bien, existen personas que refuerzan comportamientos escapistas y espacio de desahogo en el alcohol, el juego, o la soledad enfermiza, para no 
+            aceptar o reconocer las dificultades de la vida, o los pobres resultados existenciales que le origina su infelicidad, el sufrimiento o 
+            dolor psico – emocional.
+
+            <br>
+            <button cButton color="light" (click)="goToVerVideo()">Ver video</button>
+        </div>
+      </ng-template>
+    </c-accordion-item>
+    <c-accordion-item #item1="cAccordionItem" [visible]="false">
+      <ng-template cTemplateId="accordionHeaderTemplate">
+        <button (click)="item1.toggleItem()" [collapsed]="!item1.visible" cAccordionButton>
+            ACEPTA QUE NO ACEPTAS
+        </button>
+      </ng-template>
+      <ng-template cTemplateId="accordionBodyTemplate">
+        <div class="accordion-body">
+            Aceptar lo que nos llega es el primer paso para no huir de nuestra realidad y emprender cualquier cambio. En este sentido, muchas veces <strong>para 
+            aceptar los acontecimientos más dolorosos necesitamos un tiempo, el que va desde que suceden hasta que logramos integrarlos.</strong> Por otro lado, 
+            esta aceptación nos ayudará a definir una nueva visión más real de nosotros mismos y de lo que nos va sucediendo.
+            <br>
+            <button cButton color="light" (click)="goToVerVideo()">Ver video</button>
+        </div>
+      </ng-template>
+    </c-accordion-item>
+    <c-accordion-item #item2="cAccordionItem" [visible]="false">
+      <ng-template cTemplateId="accordionHeaderTemplate">
+        <button (click)="item2.toggleItem()" [collapsed]="!item2.visible" cAccordionButton>
+            APEGO E IDENTIFICACIÓN 
+        </button>
+      </ng-template>
+      <ng-template cTemplateId="accordionBodyTemplate">
+        <div class="accordion-body">
+            Cada persona nace con unas características únicas y diferentes: hay quienes tienen un sistema nervioso más sensible y reactivo, hay quien trae una 
+            personalidad con más tendencia a la frustración, los hay que se convertirán en el primer hijo o quienes vendrán después de una pérdida importante. 
+            Todo ello nos condiona en nuestro desarrollo emocional.
+            <br>
+            <button cButton color="light" (click)="goToVerVideo()">Ver video</button>
+        </div>
+      </ng-template>
+    </c-accordion-item>
+  </c-accordion>
